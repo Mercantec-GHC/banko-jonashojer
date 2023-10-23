@@ -1,4 +1,28 @@
 ﻿<Properties StartupConfiguration="{9DD69F75-7F30-484E-823E-5F20DFED5F0A}|Default">
-  <MonoDevelop.Ide.ItemProperties.banko FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Plates.cs">
+    <Files>
+      <File FileName="Program.cs" Line="12" Column="2" />
+      <File FileName="Models/Plates.cs" Line="51" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="banko">
+            <Node name="banko">
+              <Node name="Models">
+                <Node name="Plates.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.banko PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

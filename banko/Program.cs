@@ -7,7 +7,7 @@ class Program
     static void Main(string[] args)
     {
       var hest = new Plates();
-      hest.Generate();
+      hest.GeneratePlate(2);
     }
 }
 
