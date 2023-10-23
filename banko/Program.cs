@@ -1,10 +1,13 @@
-﻿namespace banko;
+﻿using banko.Models;
+
+namespace banko;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+      var hest = new Plates();
+      hest.Generate();
     }
 }
 
