@@ -1,0 +1,15 @@
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/bin/Debug/net7.0/banko
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/bin/Debug/net7.0/banko.deps.json
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/bin/Debug/net7.0/banko.runtimeconfig.json
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/bin/Debug/net7.0/banko.dll
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/bin/Debug/net7.0/banko.pdb
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/banko.csproj.AssemblyReference.cache
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/banko.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/banko.AssemblyInfoInputs.cache
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/banko.AssemblyInfo.cs
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/banko.csproj.CoreCompileInputs.cache
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/banko.dll
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/refint/banko.dll
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/banko.pdb
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/banko.genruntimeconfig.cache
+/Users/jonashojer/dev/banko-jonashojer/banko/banko/obj/Debug/net7.0/ref/banko.dll
