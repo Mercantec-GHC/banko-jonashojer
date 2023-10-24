@@ -12,13 +12,19 @@ class Program {
 			};
 
 			Console.WriteLine("Seed: jonas");
-			Console.WriteLine("/-------------------------\\");
+			Console.WriteLine("/------------------------\\");
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 5; j++) {
                     if (j == 4) {
                         Console.Write($" {rows[i, j]} |\n");
                     } else if (j == 0) {
-                        Console.Write($"|  {rows[i, j]}  |");
+                        if (rows[i, j].ToString().Length == 1)
+                        {
+                            Console.Write($"| {rows[i, j]}  |");
+                        } else
+                        {
+                        Console.Write($"| {rows[i, j]} |");
+                        }
                     } else {
                         Console.Write($" {rows[i, j]} |");
                     }
@@ -29,7 +35,7 @@ class Program {
                 }
             }
 			
-			Console.WriteLine("\\-------------------------/\n");
+			Console.WriteLine("\\------------------------/\n");
 
             bool[,] fieldMarked = new bool[3, 5];
             bool[] rowBingo = new bool[3];
