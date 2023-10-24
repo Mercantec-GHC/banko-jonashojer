@@ -13,3 +13,17 @@
 /Users/jonashojer/dev/banko-jonashojer/banko/obj/Debug/net7.0/banko.pdb
 /Users/jonashojer/dev/banko-jonashojer/banko/obj/Debug/net7.0/banko.genruntimeconfig.cache
 /Users/jonashojer/dev/banko-jonashojer/banko/obj/Debug/net7.0/ref/banko.dll
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\bin\Debug\net7.0\banko.exe
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\bin\Debug\net7.0\banko.deps.json
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\bin\Debug\net7.0\banko.runtimeconfig.json
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\bin\Debug\net7.0\banko.dll
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\bin\Debug\net7.0\banko.pdb
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\banko.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\banko.AssemblyInfoInputs.cache
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\banko.AssemblyInfo.cs
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\banko.csproj.CoreCompileInputs.cache
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\banko.dll
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\refint\banko.dll
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\banko.pdb
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\banko.genruntimeconfig.cache
+C:\Users\jgh\Source\Repos\banko-jonashojer\banko\obj\Debug\net7.0\ref\banko.dll

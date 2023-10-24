@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BogRDUDxyCj7BXKj/8MW/+tV96yu9QfJxybYKCwRkPNksonyshTap/aMvfMrwHALrm01+YcsNjkKxseTKOjv9Q==",
+  "dgSpecHash": "luCJRCtSzHy42ov+8uqu5MvawbWyHBSB4pKjbWNvlk31UbYwJ3WBcE3IPCCH+rIco5OkMa2g0eYE7NnrZAKfBw==",
   "success": true,
-  "projectFilePath": "/Users/jonashojer/dev/banko-jonashojer/banko/banko.csproj",
+  "projectFilePath": "C:\\Users\\jgh\\Source\\Repos\\banko-jonashojer\\banko\\banko.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

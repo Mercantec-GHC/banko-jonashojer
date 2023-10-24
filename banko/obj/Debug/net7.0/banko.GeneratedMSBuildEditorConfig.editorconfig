@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = banko
-build_property.ProjectDir = /Users/jonashojer/dev/banko-jonashojer/banko/
+build_property.ProjectDir = C:\Users\jgh\Source\Repos\banko-jonashojer\banko\
