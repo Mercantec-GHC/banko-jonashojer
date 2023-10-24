@@ -32,23 +32,36 @@ namespace banko.Models {
 				{ 0, 18, 0, 0, 49, 59, 68, 0, 90 },
 			};
 
-			Console.WriteLine(rows[0, 3]);
-
+			Console.WriteLine("Seed: jonas");
 			Console.WriteLine("/--------------------------------------------\\");
 			for (int i = 0; i < 3; i++) {
-				for (int j = 0; j > 9; j++) {
+				for (int j = 0; j < 9; j++) {
 					if (j == 8) {
-						Console.Write($" {rows[i, j]} |\n");
+						if (rows[i, j] == 0) {
+							Console.Write("    |\n");
+						} else {
+							Console.Write($" {rows[i, j]} |\n");
+						}
 					} else if (j == 0) {
-						Console.Write($"| {rows[i, j]} ");
+                        if (rows[i, j] == 0) {
+                            Console.Write("|    |");
+                        } else {
+                            Console.Write($"| {rows[i, j]}  |");
+                        }
 					} else {
-						Console.Write($" {rows[i, j]} |");
-					}
-					if (i != 2) {
-						Console.WriteLine(" ----------------------------------------");
+                        if (rows[i, j] == 0) {
+                            Console.Write("    |");
+                        } else {
+                            Console.Write($" {rows[i, j]} |");
+                        }
+                        
 					}
 				}
-			}
+                if (i != 2)
+                {
+                    Console.WriteLine(" --------------------------------------------");
+                }
+            }
 			Console.WriteLine("\\--------------------------------------------/\n");
 		}
 
