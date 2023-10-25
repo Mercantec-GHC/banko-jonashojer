@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jgh\\Source\\Repos\\banko-jonashojer\\banko\\banko.csproj": {}
+    "C:\\Users\\jgh\\source\\repos\\banko-jonashojer\\banko\\banko.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jgh\\Source\\Repos\\banko-jonashojer\\banko\\banko.csproj": {
+    "C:\\Users\\jgh\\source\\repos\\banko-jonashojer\\banko\\banko.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jgh\\Source\\Repos\\banko-jonashojer\\banko\\banko.csproj",
+        "projectUniqueName": "C:\\Users\\jgh\\source\\repos\\banko-jonashojer\\banko\\banko.csproj",
         "projectName": "banko",
-        "projectPath": "C:\\Users\\jgh\\Source\\Repos\\banko-jonashojer\\banko\\banko.csproj",
+        "projectPath": "C:\\Users\\jgh\\source\\repos\\banko-jonashojer\\banko\\banko.csproj",
         "packagesPath": "C:\\Users\\jgh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jgh\\Source\\Repos\\banko-jonashojer\\banko\\obj\\",
+        "outputPath": "C:\\Users\\jgh\\source\\repos\\banko-jonashojer\\banko\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jgh\\AppData\\Roaming\\NuGet\\NuGet.Config",

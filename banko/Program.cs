@@ -2,31 +2,67 @@
 
 namespace banko;
 
-class Program {
-    static void Main(string[] args) {
-      			// Tal er taget fra seedet "jonas"
-			int[,] rows = { 
-				{ 1, 21, 31, 40, 80 }, 
-				{ 13, 51, 64, 72, 88 }, 
-				{ 18, 49, 59, 68, 90 },
-			};
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Tal er taget fra seedet "jonas"
+        string[] seeds = { "jonas", "lukas", "mikkel", "alex" };
+        
 
-			Console.WriteLine("Seed: jonas");
-			Console.WriteLine("/------------------------\\");
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 5; j++) {
-                    if (j == 4) {
-                        Console.Write($" {rows[i, j]} |\n");
-                    } else if (j == 0) {
-                        if (rows[i, j].ToString().Length == 1)
+        int[,,] rows = new int[,,] {
+                {
+                    // jonas
+                    { 1, 21, 31, 40, 80 },
+                    { 13, 51, 64, 72, 88 },
+                    { 18, 49, 59, 68, 90 }
+                },
+                { 
+                    // lukas
+                    { 7, 10, 25, 62, 73 },
+                    { 13, 27, 47, 55, 64 },
+                    { 15, 36, 56, 77, 89 }
+                },
+                {
+                    // mikkel
+                    { 10, 32, 43, 51, 61 },
+                    { 26, 44, 55, 77, 89 },
+                    { 9, 18, 67, 78, 90 }
+                },
+                {
+                    // alex
+                    { 13, 20 ,61 ,71, 83 },
+                    { 8, 33, 44, 52, 84 },
+                    { 9, 18, 37, 69, 75 }
+                }
+            };
+
+        for (int h = 0; h < rows.GetLength(0); h++)
+        {
+        Console.WriteLine($"Seed: {seeds[h]}");
+        Console.WriteLine("/------------------------\\");
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (j == 4)
+                    {
+                        Console.Write($" {rows[h, i, j]} |\n");
+                    }
+                    else if (j == 0)
+                    {
+                        if (rows[h, i, j].ToString().Length == 1)
                         {
-                            Console.Write($"| {rows[i, j]}  |");
-                        } else
-                        {
-                        Console.Write($"| {rows[i, j]} |");
+                            Console.Write($"| {rows[h, i, j]}  |");
                         }
-                    } else {
-                        Console.Write($" {rows[i, j]} |");
+                        else
+                        {
+                            Console.Write($"| {rows[h, i, j]} |");
+                        }
+                    }
+                    else
+                    {
+                        Console.Write($" {rows[h, i, j]} |");
                     }
                 }
                 if (i != 2)
@@ -34,11 +70,12 @@ class Program {
                     Console.WriteLine(" -------------------------");
                 }
             }
-			
-			Console.WriteLine("\\------------------------/\n");
+        Console.WriteLine("\\------------------------/\n");
+        }
 
-            bool[,] fieldMarked = new bool[3, 5];
-            bool[] rowBingo = new bool[3];
+
+        bool[,] fieldMarked = new bool[3, 5];
+        bool[] rowBingo = new bool[3];
 
 
         while (true)
@@ -47,14 +84,17 @@ class Program {
             string number = Console.ReadLine();
             if (int.TryParse(number, out int validNumber) && validNumber >= 1 && validNumber <= 90)
             {
-                // Mark the number on the corresponding board
-                for (int i = 0; i < 3; i++)
+                for (int h = 0; h < rows.GetLength(0); h++)
                 {
-                    for (int j = 0; j < 5; j++)
+                    // Mark the number on the corresponding board
+                    for (int i = 0; i < 3; i++)
                     {
-                        if (rows[i, j] == validNumber)
+                        for (int j = 0; j < 5; j++)
                         {
-                            fieldMarked[i, j] = true;
+                            if (rows[h, i, j] == validNumber)
+                            {
+                                fieldMarked[i, j] = true;
+                            }
                         }
                     }
                 }
