@@ -6,77 +6,81 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Tal er taget fra seedet "jonas"
-        string[] seeds = { "jonas", "lukas", "mikkel", "alex" };
-        
 
-        int[,,] rows = new int[,,] {
-                {
-                    // jonas
-                    { 1, 21, 31, 40, 80 },
-                    { 13, 51, 64, 72, 88 },
-                    { 18, 49, 59, 68, 90 }
-                },
-                { 
-                    // lukas
-                    { 7, 10, 25, 62, 73 },
-                    { 13, 27, 47, 55, 64 },
-                    { 15, 36, 56, 77, 89 }
-                },
-                {
-                    // mikkel
-                    { 10, 32, 43, 51, 61 },
-                    { 26, 44, 55, 77, 89 },
-                    { 9, 18, 67, 78, 90 }
-                },
-                {
-                    // alex
-                    { 13, 20 ,61 ,71, 83 },
-                    { 8, 33, 44, 52, 84 },
-                    { 9, 18, 37, 69, 75 }
-                }
-            };
+        int[,] jonas = { { 1, 21, 31, 40, 80 }, { 13, 51, 64, 72, 88 }, { 18, 49, 59, 68, 90 } };
+        int[,] lukas = { { 7, 10, 25, 62, 73 }, { 13, 27, 47, 55, 64 }, { 15, 36, 56, 77, 89 } };
 
-        for (int h = 0; h < rows.GetLength(0); h++)
-        {
-        Console.WriteLine($"Seed: {seeds[h]}");
+        Console.WriteLine("Seed: jonas");
         Console.WriteLine("/------------------------\\");
-            for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 5; j++)
             {
-                for (int j = 0; j < 5; j++)
+                if (j == 4)
                 {
-                    if (j == 4)
+                    Console.Write($" {jonas[i, j]} |\n");
+                }
+                else if (j == 0)
+                {
+                    if (jonas[i, j].ToString().Length == 1)
                     {
-                        Console.Write($" {rows[h, i, j]} |\n");
-                    }
-                    else if (j == 0)
-                    {
-                        if (rows[h, i, j].ToString().Length == 1)
-                        {
-                            Console.Write($"| {rows[h, i, j]}  |");
-                        }
-                        else
-                        {
-                            Console.Write($"| {rows[h, i, j]} |");
-                        }
+                        Console.Write($"| {jonas[i, j]}  |");
                     }
                     else
                     {
-                        Console.Write($" {rows[h, i, j]} |");
+                        Console.Write($"| {jonas[i, j]} |");
                     }
                 }
-                if (i != 2)
+                else
                 {
-                    Console.WriteLine(" -------------------------");
+                    Console.Write($" {jonas[i, j]} |");
                 }
             }
-        Console.WriteLine("\\------------------------/\n");
+            if (i != 2)
+            {
+                Console.WriteLine(" -------------------------");
+            }
         }
+        Console.WriteLine("\\------------------------/\n");
 
+        Console.WriteLine("Seed: lukas");
+        Console.WriteLine("/------------------------\\");
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (j == 4)
+                {
+                    Console.Write($" {lukas[i, j]} |\n");
+                }
+                else if (j == 0)
+                {
+                    if (lukas[i, j].ToString().Length == 1)
+                    {
+                        Console.Write($"| {lukas[i, j]}  |");
+                    }
+                    else
+                    {
+                        Console.Write($"| {lukas[i, j]} |");
+                    }
+                }
+                else
+                {
+                    Console.Write($" {lukas[i, j]} |");
+                }
+            }
+            if (i != 2)
+            {
+                Console.WriteLine(" -------------------------");
+            }
+        }
+        Console.WriteLine("\\------------------------/\n");
 
-        bool[,] fieldMarked = new bool[3, 5];
-        bool[] rowBingo = new bool[3];
+        bool[,] jonasMarked = new bool[3, 5];
+        bool[,] lukasMarked = new bool[3, 5];
 
+        bool[] jonasRowBingo = new bool[3];
+        bool[] lukasRowBingo = new bool[3];
 
         while (true)
         {
@@ -84,32 +88,29 @@ class Program
             string number = Console.ReadLine();
             if (int.TryParse(number, out int validNumber) && validNumber >= 1 && validNumber <= 90)
             {
-                for (int h = 0; h < rows.GetLength(0); h++)
-                {
-                    // Mark the number on the corresponding board
-                    for (int i = 0; i < 3; i++)
-                    {
-                        for (int j = 0; j < 5; j++)
-                        {
-                            if (rows[h, i, j] == validNumber)
-                            {
-                                fieldMarked[i, j] = true;
-                            }
-                        }
-                    }
-                }
-                // Check for banko on each row and update the row banko status
                 for (int i = 0; i < 3; i++)
                 {
-                    if (!rowBingo[i] && CheckBankoRow(fieldMarked, i))
+                    for (int j = 0; j < 5; j++)
                     {
-                        Console.WriteLine($"You've bingo on row {i + 1}!");
-                        rowBingo[i] = true;
+                        if (jonas[i, j] == validNumber)
+                        {
+                            jonasMarked[i, j] = true;
+                        }
+                        if (lukas[i, j] == validNumber)
+                        {
+                            lukasMarked[i, j] = true;
+                        }
                     }
-                }
-                if (rowBingo.All(x => x))
-                {
-                    Console.WriteLine("You've gotten full plate!");
+                    if (!jonasRowBingo[i] && CheckBankoRow(jonasMarked, i))
+                    {
+                        Console.WriteLine($"You've bingo on row {i + 1} on plate: jonas!");
+                        jonasRowBingo[i] = true;
+                    }
+                    if (!lukasRowBingo[i] && CheckBankoRow(lukasMarked, i))
+                    {
+                        Console.WriteLine($"You've bingo on row {i + 1} on plate: lukas!");
+                        lukasRowBingo[i] = true;
+                    }
                 }
             }
             else
@@ -130,4 +131,3 @@ class Program
         return true;
     }
 }
-
